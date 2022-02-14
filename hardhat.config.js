@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
-
+const fs = require("fs")
+const privateKey = fs.readFileSync(".secret").toString()
 const projectId = ""
 
 module.exports = {
@@ -9,11 +10,11 @@ module.exports = {
     },
     mumbai: {
       url: '',
-      accounts: []
+      accounts: [privateKey]
     },
     mainnet: {
       url: '',
-      accounts: []
+      accounts: [privateKey]
     }
   },
   solidity: "0.8.4",
