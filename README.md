@@ -14,3 +14,5 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 2022/2/14 更新上傳操作介面
+
+2022/2/15 除連接區塊鏈完成全面部屬
