@@ -18,3 +18,5 @@ npx hardhat help
 2022/2/15 除連接區塊鏈，完成全面部屬
 
 2022/2/24 發現部屬有坑npx hardhat run scripts/deploy.js --network localhost無法運作，改用npx hardhat run scripts/deploy.js --network hardhat
+
+![image](https://user-images.githubusercontent.com/72617049/155530984-7983329c-8afe-472d-84a2-155e3d89c547.png)
