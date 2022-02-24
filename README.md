@@ -16,3 +16,5 @@ npx hardhat help
 2022/2/14 更新上傳操作介面
 
 2022/2/15 除連接區塊鏈，完成全面部屬
+
+2022/2/24 發現部屬有坑npx hardhat run scripts/deploy.js --network localhost無法運作，改用npx hardhat run scripts/deploy.js --network hardhat
