@@ -22,3 +22,5 @@ npx hardhat help
 ![image](https://user-images.githubusercontent.com/72617049/155530984-7983329c-8afe-472d-84a2-155e3d89c547.png)
 
 polygon 測試幣水龍頭： https://faucet.polygon.technology/
+
+2022/2/27 成功上架nft![image](https://user-images.githubusercontent.com/72617049/155887530-508871a5-4a72-4468-99fc-98d3dbce681f.png)
