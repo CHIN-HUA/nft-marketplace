@@ -1,28 +1,115 @@
-# Basic Sample Hardhat Project
+## Full stack NFT marketplace built with Polygon, Solidity, IPFS, & Next.js
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+![Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pfofv47dooojerkmfgr4.png)
 
-Try running some of the following tasks:
+This is the codebase to go along with tbe blog post [Building a Full Stack NFT Marketplace on Ethereum with Polygon](https://dev.to/dabit3/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb)
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+### Running this project
+
+#### Gitpod
+
+To deploy this project to Gitpod, follow these steps:
+
+1. Click this link to deploy
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/dabit3/polygon-ethereum-nextjs-marketplace)
+
+2. Import the RPC address given to you by GitPod into your MetaMask wallet
+
+This endpoint will look something like this:
+
 ```
-2022/2/14 更新上傳操作介面
+https://8545-copper-swordtail-j1mvhxv3.ws-eu18.gitpod.io/
+```
 
-2022/2/15 除連接區塊鏈，完成全面部屬
+The chain ID should be 1337. If you have a localhost rpc set up, you may need to overwrite it.
 
-2022/2/24 發現部屬有坑npx hardhat run scripts/deploy.js --network localhost無法運作，改用npx hardhat run scripts/deploy.js --network hardhat
+![MetaMask RPC Import](wallet.png)
 
-![image](https://user-images.githubusercontent.com/72617049/155530984-7983329c-8afe-472d-84a2-155e3d89c547.png)
+#### Local setup
 
-polygon 測試幣水龍頭： https://faucet.polygon.technology/
+To run this project locally, follow these steps.
 
+1. Clone the project locally, change into the directory, and install the dependencies:
+
+```sh
+git clone https://github.com/dabit3/polygon-ethereum-nextjs-marketplace.git
+
+cd polygon-ethereum-nextjs-marketplace
+
+# install using NPM or Yarn
+npm install
+
+# or
+
+yarn
+```
+
+2. Start the local Hardhat node
+
+```sh
+npx hardhat node
+```
+
+3. With the network running, deploy the contracts to the local network in a separate terminal window
+
+```sh
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+4. Start the app
+
+```
+npm run dev
+```
+
+### Configuration
+
+To deploy to Polygon test or main networks, update the configurations located in __hardhat.config.js__ to use a private key and, optionally, deploy to a private RPC like Infura.
+
+```javascript
+require("@nomiclabs/hardhat-waffle");
+const fs = require('fs');
+const privateKey = fs.readFileSync(".secret").toString().trim() || "01234567890123456789";
+
+// infuraId is optional if you are using Infura RPC
+const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
+
+module.exports = {
+  defaultNetwork: "hardhat",
+  networks: {
+    hardhat: {
+      chainId: 1337
+    },
+    mumbai: {
+      // Infura
+      // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
+      url: "https://rpc-mumbai.matic.today",
+      accounts: [privateKey]
+    },
+    matic: {
+      // Infura
+      // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
+      url: "https://rpc-mainnet.maticvigil.com",
+      accounts: [privateKey]
+    }
+  },
+  solidity: {
+    version: "0.8.4",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
+    }
+  }
+};
+```
+
+<<<<<<< Updated upstream
 2022/2/27 成功上架nft![image](https://user-images.githubusercontent.com/72617049/155887530-508871a5-4a72-4468-99fc-98d3dbce681f.png)
 
 2022/2/28 改進前端使前端能撥放音樂nft
+=======
+If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) project ID.
+>>>>>>> Stashed changes
