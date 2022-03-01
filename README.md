@@ -10,5 +10,7 @@
 
 啟動指令:
 npx hardhat node
+
 npx hardhat run scripts/deploy.js --network localhost
+
 npm run dev
