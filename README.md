@@ -9,8 +9,11 @@
 2022/3/1 meeting https://1drv.ms/p/s!AsUFJC8FQmyzhW6tGP8reWny-c1h?e=4HCrIu
 
 啟動指令:
+
 npx hardhat node
 
 npx hardhat run scripts/deploy.js --network localhost
 
 npm run dev
+
+參考資料: https://github.com/CHIN-HUA/polygon-ethereum-nextjs-marketplace-main
