@@ -17,3 +17,5 @@ npx hardhat run scripts/deploy.js --network localhost
 npm run dev
 
 參考資料: https://github.com/CHIN-HUA/polygon-ethereum-nextjs-marketplace-main
+
+2022/3/9 meeting https://1drv.ms/p/s!AsUFJC8FQmyzhXCerCgkG5Z6gpp4?e=rjmsgr
