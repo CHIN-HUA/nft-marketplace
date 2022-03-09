@@ -15,4 +15,6 @@ npx hardhat help
 ```
 2022/2/14 更新上傳操作介面
 
-機器學習背景知識1: https://speech.ee.ntu.edu.tw/~hylee/ml/ml2021-course-data/regression%20(v16).pdf
+機器學習背景知識: 
+https://speech.ee.ntu.edu.tw/~hylee/ml/ml2021-course-data/regression%20(v16).pdf
+https://www.danieldjohnson.com/2015/08/03/composing-music-with-recurrent-neural-networks/
