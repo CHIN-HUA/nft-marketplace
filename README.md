@@ -21,3 +21,7 @@ https://speech.ee.ntu.edu.tw/~hylee/ml/ml2021-course-data/regression%20(v16).pdf
 https://www.danieldjohnson.com/2015/08/03/composing-music-with-recurrent-neural-networks/
 
 https://youtu.be/FLr0r-QhqH0
+
+神經網路Tensorflow
+
+https://www.youtube.com/playlist?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
