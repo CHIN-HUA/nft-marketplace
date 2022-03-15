@@ -29,4 +29,5 @@ https://www.youtube.com/playlist?list=PLXO45tsB95cKI5AIlf5TxxFPzb-0zeVZ8
 https://www.tensorflow.org/images/tensors_flowing.gif
 ![image](https://user-images.githubusercontent.com/72617049/158062613-b53652fc-36e9-4a06-a5d0-b72b6193ce7f.png)
 
+加速訓練: https://cs231n.github.io/neural-networks-3/
 
