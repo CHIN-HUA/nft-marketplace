@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity ^0.8.4;
 
+//
+
 //erc721標準
 //繼承了OpenZepplin實現的ERC721標準
 import "@openzeppelin/contracts/utils/Counters.sol";
