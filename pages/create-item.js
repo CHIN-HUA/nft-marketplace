@@ -11,10 +11,11 @@ import {
 } from '../config'
 
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
-import Market from '../artifacts/contracts/Market.sol/NFTMarket.json'
+import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
 
 export default function CreateItem() {
   const [fileUrl, setFileUrl] = useState(null)
+  const [musicUrl, setmusicUrl] = useState(null)
   const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' })
   const router = useRouter()
 
@@ -33,12 +34,27 @@ export default function CreateItem() {
       console.log('Error uploading file: ', error)
     }  
   }
+  async function onChangemusic(e) {
+    const file = e.target.files[0]
+    try {
+      const added = await client.add(
+        file,
+        {
+          progress: (prog) => console.log(`received: ${prog}`)
+        }
+      )
+      const url = `https://ipfs.infura.io/ipfs/${added.path}`
+      setmusicUrl(url)
+    } catch (error) {
+      console.log('Error uploading file: ', error)
+    }  
+  }
   async function createMarket() {
     const { name, description, price } = formInput
     if (!name || !description || !price || !fileUrl) return
     /* first, upload to IPFS */
     const data = JSON.stringify({
-      name, description, image: fileUrl
+      name, description, image: fileUrl, music: musicUrl
     })
     try {
       const added = await client.add(data)
@@ -63,7 +79,6 @@ export default function CreateItem() {
     let event = tx.events[0]
     let value = event.args[2]
     let tokenId = value.toNumber()
-
     const price = ethers.utils.parseUnits(formInput.price, 'ether')
   
     /* then list the item for sale on the marketplace */
@@ -105,6 +120,18 @@ export default function CreateItem() {
             <img className="rounded mt-4" width="350" src={fileUrl} />
           )
         }
+        <input
+          type="file"
+          name="Asset"
+          className="my-4"
+          onChange={onChangemusic}
+        />
+        <audio
+        controls
+        src={musicUrl}>
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
         <button onClick={createMarket} className="font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg">
           Create Digital Asset
         </button>
