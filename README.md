@@ -31,3 +31,5 @@ https://www.tensorflow.org/images/tensors_flowing.gif
 
 加速訓練: https://cs231n.github.io/neural-networks-3/
 
+2022/3/19 MIDI-to-MP3-master 完成
+
