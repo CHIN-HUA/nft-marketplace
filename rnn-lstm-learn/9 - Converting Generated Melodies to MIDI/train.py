@@ -11,15 +11,15 @@ SAVE_MODEL_PATH = "model.h5"
 
 
 def build_model(output_units, num_units, loss, learning_rate):
-    """Builds and compiles model
+    """建立和編譯模型
 
-    :param output_units (int): Num output units
-    :param num_units (list of int): Num of units in hidden layers
-    :param loss (str): Type of loss function to use
-    :param learning_rate (float): Learning rate to apply
+     :param output_units (int): 輸出單元數
+     :param num_units (list of int): 隱藏層中的單元數
+     :param loss (str): 要使用的損失函數的類型
+     :param learning_rate (float): 應用的學習率
 
-    :return model (tf model): Where the magic happens :D
-    """
+     :return model (tf model): 魔法發生的地方:D
+     """
 
     # create the model architecture
     input = keras.layers.Input(shape=(None, output_units))
@@ -41,13 +41,13 @@ def build_model(output_units, num_units, loss, learning_rate):
 
 
 def train(output_units=OUTPUT_UNITS, num_units=NUM_UNITS, loss=LOSS, learning_rate=LEARNING_RATE):
-    """Train and save TF model.
+    """訓練並保存TF模型。
 
-    :param output_units (int): Num output units
-    :param num_units (list of int): Num of units in hidden layers
-    :param loss (str): Type of loss function to use
-    :param learning_rate (float): Learning rate to apply
-    """
+     :param output_units (int): 輸出單元數
+     :param num_units (list of int): 隱藏層中的單元數
+     :param loss (str): 要使用的損失函數的類型
+     :param learning_rate (float): 應用的學習率
+     """
 
     # generate the training sequences
     inputs, targets = generate_training_sequences(SEQUENCE_LENGTH)
