@@ -33,3 +33,7 @@ https://www.youtube.com/watch?v=tXSF7lIQouQ&t=5s
 2022/3/26 JS調用py
 
 https://youtu.be/lSAFVMaaH-w
+
+2022/3/27 使用eel操作
+
+https://youtu.be/IbGJaTkyuXA
