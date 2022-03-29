@@ -39,3 +39,6 @@ https://youtu.be/lSAFVMaaH-w
 https://youtu.be/IbGJaTkyuXA
 
 https://neutron0916.medium.com/python-eel-%E5%89%B5%E9%80%A0%E5%80%8B%E4%BA%BA%E7%B6%B2%E9%A0%81gui%E6%A1%8C%E9%9D%A2%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F-%E5%85%A5%E9%96%80%E7%AF%87-2500b38ed070
+
+2022/3/30 meeting
+https://1drv.ms/p/s!AsUFJC8FQmyzhX-j1VQaqhRhlUaj?e=iZJkQZ
