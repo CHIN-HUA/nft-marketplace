@@ -42,3 +42,6 @@ https://neutron0916.medium.com/python-eel-%E5%89%B5%E9%80%A0%E5%80%8B%E4%BA%BA%E
 
 2022/3/30 meeting
 https://1drv.ms/p/s!AsUFJC8FQmyzhX-j1VQaqhRhlUaj?e=iZJkQZ
+
+git指令
+https://youtu.be/9v-tXVz-cLE
