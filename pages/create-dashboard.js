@@ -2,10 +2,6 @@ import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Web3Modal from "web3modal"
-import WalletConnectProvider from "@walletconnect/web3-provider";
-import Music from './music'
-
-import WalletLink from "walletlink";
 
 import {
   nftmarketaddress, nftaddress
@@ -21,64 +17,11 @@ export default function CreatorDashboard() {
   useEffect(() => {
     loadNFTs()
   }, [])
-
-
-
-  // const providerOptions = {
-  //   // Example with injected providers
-  //   injected: {
-  //     display: {
-  //       logo: "data:image/gif;base64,INSERT_BASE64_STRING",
-  //       name: "Injected",
-  //       description: "Connect with the provider in your Browser"
-  //     },
-  //     package: null
-  //   },
-  //   // Example with WalletConnect provider
-  //   walletconnect: {
-  //     display: {
-  //       logo: "data:image/gif;base64,INSERT_BASE64_STRING",
-  //       name: "Mobile",
-  //       description: "Scan qrcode with your mobile wallet"
-  //     },
-  //     package: WalletConnectProvider,
-  //     options: {
-  //       infuraId: "092d09dc24d1486f87f0fda9cc05a18f" // required
-  //     }
-  //   }
-  // };
-  // const providerOptions = {
-  //   walletconnect: {
-  //     package: WalletConnectProvider, // required
-  //     options: {
-  //       infuraId: "092d09dc24d1486f87f0fda9cc05a18f" // required
-  //     }
-  //   },
-  //   WalletLink:{
-  //     package: WalletLink,
-  //     options: {
-  //       appName: "N",
-  //       infuraId: "092d09dc24d1486f87f0fda9cc05a18f",
-  //       rpc:"",
-  //       chainId: 4,
-  //       applogoUrl: null,
-  //       darkMode: true
-  //     }
-  //   },
-  // };
-  
-
-
-
   async function loadNFTs() {
-
     const web3Modal = new Web3Modal({
       network: "mainnet",
       cacheProvider: true,
-      // providerOptions,
-      // theme: "dark"
     })
-
     const connection = await web3Modal.connect()
     const provider = new ethers.providers.Web3Provider(connection)
     const signer = provider.getSigner()
@@ -118,7 +61,12 @@ export default function CreatorDashboard() {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <img src={nft.image} className="rounded" />
-                <Music musicsrc={nft.music}/>
+                <audio
+                controls
+                src={nft.music}>
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
                 <div className="p-4 bg-black">
                   <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
                 </div>
@@ -137,7 +85,12 @@ export default function CreatorDashboard() {
                   sold.map((nft, i) => (
                     <div key={i} className="border shadow rounded-xl overflow-hidden">
                       <img src={nft.image} className="rounded" />
-                      <Music musicsrc={nft.music}/>
+                      <audio
+                      controls
+                      src={nft.music}>
+                          Your browser does not support the
+                          <code>audio</code> element.
+                      </audio>
                       <div className="p-4 bg-black">
                         <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
                       </div>

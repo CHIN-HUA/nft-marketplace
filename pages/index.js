@@ -2,7 +2,6 @@ import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Web3Modal from "web3modal"
-import Music from './music'
 
 import {
   nftaddress, nftmarketaddress
@@ -65,7 +64,12 @@ export default function Home() {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <img src={nft.image} />
-                <Music musicsrc={nft.music}/>
+                <audio
+                controls
+                src={nft.music}>
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
                 <div className="p-4">
                   <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
