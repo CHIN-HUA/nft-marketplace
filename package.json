@@ -1,0 +1,6 @@
+{
+  "name": "hardhat-project",
+  "dependencies": {
+    "ipfs-api": "^26.1.2"
+  }
+}

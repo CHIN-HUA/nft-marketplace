@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 320px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        header,footer{
+            height: 40px;
+            line-height: 40px;
+            background: orange;
+            text-align: center;
+        }li{
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid red;
+            border-top: none;
+            font-size: 15px;
+            text-indent: 20px;
+            list-style: none;
+        }
+        #ado{
+            width: 100%;
+            height: 20px;
+            margin-top: 10px;
+        }
+        .sty{
+            background: pink;
+        }
+    </style>
+    </head>
+    <body>
+        <header>音樂台</header>
+        <section>
+            <ul>
+                <li>AImusic</li>
+            </ul>
+        </section>
+        <audio src="" id="ado" controls=""></audio>
+        <footer>
+            當前撥放的是: <span id="con"></span>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        var lis=document.getElementsByTagName('li');
+        var ado=document.getElementById('ado');
+        var con=document.getElementById('con');
+
+        var arr=['../audio/mel.midi']
+
+        for(var i=0; i<lis.length;i++){
+            lis[i].onclick=function(){
+                for(var i=0; i<lis.length; i++){
+                    if(this==lis[i]){
+                        lis[i].className='sty';
+                        ado.src=arr[i];
+                        ado.MIDIjs.play();
+                        con.innerHTML=lis[i].innerHTML;
+
+                        var a=i;
+
+                        ado.onended=function(){
+                            a++;
+                            if(a>lis.length-1){
+                                a=0;
+                            }
+                            for(var j=0; j<lis.length; j++){
+                                lis[j].className='';
+                            }
+                            con.innerHTML=lis[a].innerHTML;
+                            ado.src=arr[a];
+                            ado.play();
+                            lis[a].className='sty'
+                        }
+                    }
+                    else{
+                            lis[i].className=''
+                    }
+                }
+            }
+        }
+    </script>
+</html> -->
+
+<midi-player
+  src='https://cdn.jsdelivr.net/gh/CHIN-HUA/pic@1.0/mel.mid'
+  sound-font visualizer="#myPianoRollVisualizer">
+</midi-player>
+
+<midi-visualizer type="piano-roll" id="myPianoRollVisualizer" 
+  src='https://cdn.jsdelivr.net/gh/CHIN-HUA/pic@1.0/mel.mid'>
+</midi-visualizer>
+
+<midi-player
+  src='https://cdn.jsdelivr.net/gh/CHIN-HUA/pic@1.0/mel.mid'
+  sound-font visualizer="#myStaffVisualizer">
+</midi-player>
+
+<midi-visualizer type="staff" id="myStaffVisualizer" 
+  src='https://cdn.jsdelivr.net/gh/CHIN-HUA/pic@1.0/mel.mid'>
+</midi-visualizer>
+
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
