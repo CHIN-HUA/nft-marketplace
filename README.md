@@ -55,7 +55,10 @@ https://github.com/CHIN-HUA/pic
 
 ![image](https://user-images.githubusercontent.com/72617049/162625263-a1151f91-fe0c-400b-9678-ca822869184f.png)
 
-2022/4/13 https://1drv.ms/p/s!AsUFJC8FQmyzhgshNnATMEc4k7Wi?e=Mx5anW
+2022/4/13 4/20 其中考暫停meeting
+
+2022/4/27
+https://1drv.ms/p/s!AsUFJC8FQmyzhgshNnATMEc4k7Wi?e=Mx5anW
 
 https://codepen.io/cifkao/pen/WNwpLzL?editors=1010
 
