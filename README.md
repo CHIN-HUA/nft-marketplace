@@ -62,3 +62,9 @@ https://1drv.ms/p/s!AsUFJC8FQmyzhgshNnATMEc4k7Wi?e=Mx5anW
 
 https://codepen.io/cifkao/pen/WNwpLzL?editors=1010
 
+其中正式報告:
+
+白皮書概要參考 https://medium.com/@twbcol.committee/%E5%8F%B0%E7%81%A3%E5%8D%80%E5%A1%8A%E9%8F%88%E5%A5%A7%E6%9E%97%E5%8C%B9%E4%BA%9E-%E6%92%B0%E5%AF%AB%E9%A0%85%E7%9B%AE%E7%99%BD%E7%9A%AE%E6%9B%B8-97c04a1bf4ea
+
+ppt: https://1drv.ms/p/s!AsUFJC8FQmyzhhNCqB2KijL6ywwT?e=dCMnYC
+
