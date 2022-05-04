@@ -30,7 +30,7 @@ https://www.youtube.com/watch?v=M1O4vVPO2oo
 
 https://www.youtube.com/watch?v=tXSF7lIQouQ&t=5s
 
-2022/3/26 JS調用py
+2022/3/26 JavaScript調用python
 
 https://youtu.be/lSAFVMaaH-w
 
