@@ -10,7 +10,7 @@
 
 啟動指令:
 
-npx hardhat node (此功能為產生測試用錢包、為公用的)
+npx hardhat node (此功能為產生測試用錢包，為公用的測試用錢包(產生的錢包與私鑰是固定的，若使用者想使用本地錢包則可省略)
 
 npx hardhat run scripts/deploy.js --network localhost
 
