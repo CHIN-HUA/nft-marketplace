@@ -1,34 +1,24 @@
 {
-  "name": "polygon-next",
+  "name": "app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prestart": "sh ./make-coffee.sh",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "@openzeppelin/contracts": "^4.2.0",
-    "axios": "^0.21.1",
-    "caniuse-lite": "^1.0.30001312",
-    "chai": "^4.3.4",
-    "ethereum-waffle": "^3.4.0",
-    "ethers": "^5.4.1",
-    "ipfs-http-client": "50.1.2",
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "web3modal": "^1.9.3"
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "eslint": "7.29.0",
-    "eslint-config-next": "11.0.1",
-    "hardhat": "^2.8.4",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
-  }
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5"
+  },
+  "browser":{
+    "child_process": false
+  }  
 }
