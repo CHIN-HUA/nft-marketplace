@@ -68,3 +68,7 @@ https://codepen.io/cifkao/pen/WNwpLzL?editors=1010
 
 ppt: https://1drv.ms/p/s!AsUFJC8FQmyzhhNCqB2KijL6ywwT?e=dCMnYC
 
+next.js to py:
+https://www.cnpython.com/qa/1326512
+https://www.youtube.com/watch?v=FjDOJzqnpBQ
+http://nodejs.cn/api/child_process.html
