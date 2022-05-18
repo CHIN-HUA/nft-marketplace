@@ -79,3 +79,6 @@ next.js Intro
 https://1drv.ms/p/s!Akfi-Z12aMp6gTaAzwoJ_FEeccl-?e=eGiWc2
 
 https://nextjs.org/learn
+
+2022/5/18 AI music: 
+https://github.com/googlecreativelab/beat-blender
