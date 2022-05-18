@@ -82,3 +82,6 @@ https://nextjs.org/learn
 
 2022/5/18 AI music: 
 https://github.com/googlecreativelab/beat-blender
+
+可能的方法
+https://1drv.ms/p/s!Akfi-Z12aMp6gTjrtRle3AEZkEke?e=TjbGTt
