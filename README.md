@@ -52,4 +52,4 @@ You can first write a CSS module (e.g. alert.module.css) like this:
 }
 
 ---
-nextjs-blog-xx8897.vercel.app
+https://nextjs-blog-xx8897.vercel.app/
