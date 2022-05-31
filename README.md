@@ -50,3 +50,6 @@ You can first write a CSS module (e.g. alert.module.css) like this:
 .error {
   color: red;
 }
+
+---
+nextjs-blog-xx8897.vercel.app
