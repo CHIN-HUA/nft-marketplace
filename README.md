@@ -86,4 +86,6 @@ https://github.com/googlecreativelab/beat-blender
 可能的方法
 https://1drv.ms/p/s!Akfi-Z12aMp6gTjrtRle3AEZkEke?e=TjbGTt
 
-5/31 https://github.com/APNovichkov/aux-ai-api
+5/31 
+音樂: https://github.com/APNovichkov/aux-ai-api
+網頁: https://github.com/APNovichkov/aux-ai-frontend
