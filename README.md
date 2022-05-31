@@ -32,3 +32,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+--
+
+Using classnames library to toggle classes
+classnames is a simple library that lets you toggle class names easily. You can install it using npm install classnames or yarn add classnames.
+
+Please take a look at its documentation for more details, but here's the basic usage:
+
+Suppose that you want to create an Alert component which accepts type, which can be 'success' or 'error'.
+If it's 'success', you want the text color to be green. If it's 'error', you want the text color to be red.
+You can first write a CSS module (e.g. alert.module.css) like this:
+
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
