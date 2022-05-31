@@ -34,6 +34,8 @@ https://www.youtube.com/watch?v=tXSF7lIQouQ&t=5s
 
 https://youtu.be/lSAFVMaaH-w
 
+
+
 2022/3/27 使用eel操作
 
 https://youtu.be/IbGJaTkyuXA
@@ -89,3 +91,5 @@ https://1drv.ms/p/s!Akfi-Z12aMp6gTjrtRle3AEZkEke?e=TjbGTt
 5/31 
 音樂: https://github.com/APNovichkov/aux-ai-api
 網頁: https://github.com/APNovichkov/aux-ai-frontend
+
+6/1 https://1drv.ms/p/s!AsUFJC8FQmyzhh9mI-kexlFxyJxP?e=aa5FmQ
