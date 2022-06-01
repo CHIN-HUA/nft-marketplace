@@ -93,3 +93,8 @@ https://1drv.ms/p/s!Akfi-Z12aMp6gTjrtRle3AEZkEke?e=TjbGTt
 網頁: https://github.com/APNovichkov/aux-ai-frontend
 
 6/1 https://1drv.ms/p/s!AsUFJC8FQmyzhh9mI-kexlFxyJxP?e=aa5FmQ
+
+next blog intro https://nextjs-blog-xx8897.vercel.app/
+nexy blog intro api https://nextjs-blog-xx8897.vercel.app/api/hello
+next blog 404 https://nextjs-blog-xx8897.vercel.app/api
+next intro https://1drv.ms/p/s!Akfi-Z12aMp6gTaAzwoJ_FEeccl-?e=eGiWc2
