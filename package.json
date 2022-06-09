@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "name": "polygon-next",
+=======
+  "name": "nft-marketplace",
+>>>>>>> Stashed changes
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< Updated upstream
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^4.2.0",
@@ -30,5 +35,42 @@
     "hardhat": "^2.8.4",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
+=======
+    "@ant-design/icons": "4.0.0",
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.8",
+    "@coinbase/wallet-sdk": "^3.0.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@radix-ui/react-dropdown-menu": "^0.1.6",
+    "@rocketseat/unform": "^1.6.2",
+    "@walletconnect/web3-provider": "^1.7.8",
+    "axios": "^0.27.1",
+    "chai": "^4.3.6",
+    "darkmode-js": "^1.5.7",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.4",
+    "framer-motion": "^6.3.2",
+    "hardhat": "^2.9.3",
+    "html-midi-player": "^1.4.0",
+    "ipfs-http-client": "^56.0.3",
+    "next": "12.1.5",
+    "next-dark-mode": "^3.0.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0",
+    "web3modal": "^1.9.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
+>>>>>>> Stashed changes
   }
 }

@@ -1,6 +1,11 @@
 import '../styles/globals.css'
+<<<<<<< Updated upstream
 import Link from 'next/link'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+=======
+
+import NavBar from './navbar';
+>>>>>>> Stashed changes
 
 function MyApp({ Component, pageProps }) {
   async function drop(e) {
@@ -19,6 +24,7 @@ function MyApp({ Component, pageProps }) {
     }  
   }
   return (
+<<<<<<< Updated upstream
     <div>
       <nav className="border-b p-6">
         <p className="text-4xl font-bold">Metaverse Marketplace</p>
@@ -72,6 +78,12 @@ function MyApp({ Component, pageProps }) {
       </nav>
       <Component {...pageProps} />
     </div>
+=======
+    <>
+      <NavBar />
+      <Component {...pageProps} />
+    </>
+>>>>>>> Stashed changes
   )
 }
 

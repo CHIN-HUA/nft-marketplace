@@ -1,68 +1,31 @@
 import { ethers } from 'ethers'
-<<<<<<< Updated upstream
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import Web3Modal from "web3modal"
-=======
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Web3Modal from "web3modal"
-import Music from './music'
-import Filter from './filter'
-
-
-import Darkmode from 'darkmode-js';
-
-const options = {
-  bottom: '64px', // default: '32px'
-  right: '32px', // default: '32px'
-  left: 'unset', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
-}
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
-
->>>>>>> Stashed changes
+import Music from '../music'
 
 import {
   nftaddress, nftmarketaddress
-} from '../config'
+} from '../../config'
 
-import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
-import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
-<<<<<<< Updated upstream
-=======
+import NFT from '../../artifacts/contracts/NFT.sol/NFT.json'
+import Market from '../../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
 // import { Link } from 'react-router-dom'
->>>>>>> Stashed changes
 
-export default function Home() {
+export default function Searchpage() {
+  const router = useRouter()
+  // const { provider } = useWeb3()
+  const searchid = router.query.search
+  // console.log(router.query)
+  console.log(searchid)
   const [nfts, setNfts] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
-<<<<<<< Updated upstream
+  const [search_nfts, changecon] = useState([])
   useEffect(() => {
-    loadNFTs()
-  }, [])
-=======
-  const [activeTab, setActiveTab] = useState("Home");
-  const [state, setTabstate] = useState(0);
-  const [condition, setCondition] = useState("")
-  const [chosenone, setchose] = useState([])
-
-  useEffect(() => {
-    loadNFTs()
-  }, [])
-  function compareNumbers(a, b) {
-    return a.price > b.price;
-  }
->>>>>>> Stashed changes
+    loadNFTs(),loadnft()
+  }, [nfts])
   async function loadNFTs() {
     const provider = new ethers.providers.JsonRpcProvider()
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
@@ -85,17 +48,22 @@ export default function Home() {
       }
       return item
     }))
-<<<<<<< Updated upstream
     setNfts(items)
     setLoadingState('loaded') 
-=======
-    items.sort(compareNumbers)
-    setNfts(items)
-    setLoadingState('loaded')
-    const choseItems = items.filter(i => i.music)
-    setchose(choseItems)
->>>>>>> Stashed changes
   }
+  async function loadnft() {
+    // console.log(nfts)
+
+    const chosen = nfts.filter(i => {
+      var reg = new RegExp(searchid)
+      if(reg.test(i.name))
+        return i
+    })
+    changecon(chosen) 
+  }
+  // var reg = new RegExp(searchid);
+  // console.log(reg.test("caaoady") )
+  // console.log(searchid)
   async function buyNft(nft) {
     const web3Modal = new Web3Modal()
     const connection = await web3Modal.connect()
@@ -110,47 +78,18 @@ export default function Home() {
     await transaction.wait()
     loadNFTs()
   }
-  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>)
-<<<<<<< Updated upstream
+  if (loadingState === 'loaded' && !search_nfts.length) return (<h1 className="px-20 py-10 text-3xl">No items find</h1>)
   return (
-=======
-  if (loadingState === 'loaded' && !chosenone.length && condition === "music")
-  {
-    return (
-    <>
-      <Filter pattern={activeTab} prestate={state} setState={setTabstate} setActivefilter={setCondition} />
-      <div>
-      <h1 className="py-10 px-20 text-3xl">
-      No music assets</h1>
-      </div>
-      </>
-    )
-  }
-  return (
-    <>
-    <Filter pattern={activeTab} prestate={state} setState={setTabstate} setActivefilter={setCondition} />
-    {condition}
->>>>>>> Stashed changes
     <div className="flex justify-center">
       <div className="px-4" style={{ maxWidth: '1600px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
-            nfts.map((nft, i) => (
+            search_nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
-<<<<<<< Updated upstream
-                <img src={nft.image} />
-                <audio
-                controls
-                src={nft.music}>
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-=======
-                <Link href={{pathname: '/collections/'+nft.tokenId, query: { keyword: 'this way' }}}>
+                <Link href={{pathname: '/collections/'+nft.name, query: { keyword: 'this way' }}}>
                 <img src={nft.image} />
                 </Link>
                 <Music musicsrc={nft.music}/>
->>>>>>> Stashed changes
                 <div className="p-4">
                   <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
@@ -167,9 +106,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-<<<<<<< Updated upstream
-=======
-    </>
->>>>>>> Stashed changes
   )
 }

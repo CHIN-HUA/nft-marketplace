@@ -1,9 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+<<<<<<< Updated upstream
 .secret
 .infuraid
 config.js
 
+=======
+>>>>>>> Stashed changes
 # dependencies
 /node_modules
 /.pnp
@@ -27,17 +30,31 @@ config.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< Updated upstream
 
 # local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+=======
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+>>>>>>> Stashed changes
 
 # vercel
 .vercel
 
 node_modules
+<<<<<<< Updated upstream
+=======
+.env
+coverage
+coverage.json
+typechain
+>>>>>>> Stashed changes
 
 #Hardhat files
 cache

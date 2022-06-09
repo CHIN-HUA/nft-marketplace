@@ -2,14 +2,11 @@ import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Web3Modal from "web3modal"
-
-<<<<<<< Updated upstream
-=======
-import Music from './music'
+import WalletConnectProvider from "@walletconnect/web3-provider";
 
 
+import WalletLink from "walletlink";
 
->>>>>>> Stashed changes
 import {
   nftmarketaddress, nftaddress
 } from '../config'
@@ -17,38 +14,69 @@ import {
 import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
 
-export default function CreatorDashboard() {
+export default function tes({provider,signer}) {
   const [nfts, setNfts] = useState([])
   const [sold, setSold] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
   useEffect(() => {
     loadNFTs()
   }, [])
-<<<<<<< Updated upstream
+
+//   const providerOptions = {
+//     walletconnect: {
+//       package: WalletConnectProvider, // required
+//       options: {
+//         infuraId: "092d09dc24d1486f87f0fda9cc05a18f" // required
+//       }
+//     },
+//     WalletLink:{
+//       package: WalletLink,
+//       options: {
+//         appName: "N",
+//         infuraId: "092d09dc24d1486f87f0fda9cc05a18f",
+//         rpc:"",
+//         chainId: 4,
+//         applogoUrl: null,
+//         darkMode: true
+//       }
+//     },
+//   };
+//   const providerOptions = {
+//     walletconnect: {
+//       package: WalletConnectProvider, // required
+//       options: {
+//         infuraId: "INFURA_ID" // required
+//       }
+//     }
+//   };
+  
+//   const web3Modal = new Web3Modal({
+//     network: "mainnet",
+//     cacheProvider: true,
+//     providerOptions,
+//     theme: {
+//         background: "rgb(39, 49, 56)",
+//         main: "rgb(199, 199, 199)",
+//         secondary: "rgb(136, 136, 136)",
+//         border: "rgba(195, 195, 195, 0.14)",
+//         hover: "rgb(16, 26, 32)"
+//       }
+//   })
+
+  
+
   async function loadNFTs() {
-    const web3Modal = new Web3Modal({
-      network: "mainnet",
-      cacheProvider: true,
-    })
-=======
+
+    // const web3Modal = new Web3Modal({
+    //     network: "mainnet",
+    //     cacheProvider: true,
+    //   })
+    
+    // const connection = await web3Modal.connect()
+    // const provider = new ethers.providers.Web3Provider(connection)
+    // const signer = provider.getSigner()
 
 
-
-
-  async function loadNFTs() {
-
-    const web3Modal = new Web3Modal({
-      network: "mainnet",
-      cacheProvider: true,
-      // providerOptions,
-      // theme: "dark"
-    })
-
->>>>>>> Stashed changes
-    const connection = await web3Modal.connect()
-    const provider = new ethers.providers.Web3Provider(connection)
-    const signer = provider.getSigner()
-      
     const marketContract = new ethers.Contract(nftmarketaddress, Market.abi, signer)
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
     const data = await marketContract.fetchItemsCreated()
@@ -84,16 +112,12 @@ export default function CreatorDashboard() {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <img src={nft.image} className="rounded" />
-<<<<<<< Updated upstream
                 <audio
                 controls
                 src={nft.music}>
                     Your browser does not support the
                     <code>audio</code> element.
                 </audio>
-=======
-                <Music musicsrc={nft.music}/>
->>>>>>> Stashed changes
                 <div className="p-4 bg-black">
                   <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
                 </div>
@@ -112,16 +136,12 @@ export default function CreatorDashboard() {
                   sold.map((nft, i) => (
                     <div key={i} className="border shadow rounded-xl overflow-hidden">
                       <img src={nft.image} className="rounded" />
-<<<<<<< Updated upstream
                       <audio
                       controls
                       src={nft.music}>
                           Your browser does not support the
                           <code>audio</code> element.
                       </audio>
-=======
-                      <Music musicsrc={nft.music}/>
->>>>>>> Stashed changes
                       <div className="p-4 bg-black">
                         <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
                       </div>
