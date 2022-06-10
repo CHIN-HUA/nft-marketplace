@@ -100,3 +100,6 @@ nexy.js blog intro api https://nextjs-blog-xx8897.vercel.app/api/hello
 next.js blog 404 https://nextjs-blog-xx8897.vercel.app/api
 
 next intro https://1drv.ms/p/s!Akfi-Z12aMp6gTaAzwoJ_FEeccl-?e=eGiWc2
+
+6/8 https://1drv.ms/p/s!AsUFJC8FQmyzhiNpbyQAZ8ZwcMJy?e=uKLqXx
+
