@@ -105,3 +105,7 @@ next intro https://1drv.ms/p/s!Akfi-Z12aMp6gTaAzwoJ_FEeccl-?e=eGiWc2
 
 uniswap白皮書: 
 https://uniswap.org/whitepaper.pdf
+
+智能合約練習:
+https://solidity-by-example.org/
+
