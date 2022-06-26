@@ -111,3 +111,5 @@ https://solidity-by-example.org/
 
 ![image](https://user-images.githubusercontent.com/72617049/174943282-6e41bae6-2f4e-4690-9edf-cbe519e942c5.png)
 
+uniswap Hayden Adams 共筆: 
+https://hackmd.io/@HaydenAdams/HJ9jLsfTz#%F0%9F%A6%84-Uniswap-Whitepaper
