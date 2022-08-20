@@ -117,3 +117,5 @@ https://hackmd.io/@HaydenAdams/HJ9jLsfTz#%F0%9F%A6%84-Uniswap-Whitepaper
 uniswap搭建:
 https://segmentfault.com/a/1190000040401731
 
+2022/8/20 平台動畫:
+https://colab.research.google.com/drive/1_MckQnU0mCF8FJ7PoV21nhVvoOeotHGy?usp=sharing
