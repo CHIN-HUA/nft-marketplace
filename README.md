@@ -119,3 +119,10 @@ https://segmentfault.com/a/1190000040401731
 
 2022/8/20 平台動畫:
 https://colab.research.google.com/drive/1_MckQnU0mCF8FJ7PoV21nhVvoOeotHGy?usp=sharing
+
+2022/9/21
+https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw/EQ2UaaAgLQ5Pk-J2jTx5J-kBE7UDXzCeGugrBOZGjzJcNw?e=RFxVF0
+
+2022/9/28
+https://onedrive.live.com/edit.aspx?resid=7ACA68769DF9E247!195&ithint=file%2cpptx&authkey=!AJ24mcEft4s8Vao
+https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw/EWDTOMi_SB5AlF772XWhKyABnBILpGEyoLdqKWPpqebBVA?e=KY9NVz
