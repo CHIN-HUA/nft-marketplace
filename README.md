@@ -126,3 +126,7 @@ https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw
 2022/9/28
 https://onedrive.live.com/edit.aspx?resid=7ACA68769DF9E247!195&ithint=file%2cpptx&authkey=!AJ24mcEft4s8Vao
 https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw/EWDTOMi_SB5AlF772XWhKyABnBILpGEyoLdqKWPpqebBVA?e=KY9NVz
+
+2022/10/23
+https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw/EctisMM5u6lCshNWb4tElywB80bi1hkRK35TWv_Zf1XSXA?e=iax4kP
+
