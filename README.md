@@ -12,6 +12,10 @@
 
 npx hardhat node (此功能為產生測試用錢包，為公用的測試用錢包(產生的錢包與私鑰是固定的，若使用者想使用本地錢包則可省略)
 
+注意版本:
+
+https://stackoverflow.com/questions/73622631/npx-hardhat-compile-unexpected-token
+
 npx hardhat run scripts/deploy.js --network localhost
 
 npm run dev
