@@ -135,5 +135,5 @@ https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw
 https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw/EctisMM5u6lCshNWb4tElywB80bi1hkRK35TWv_Zf1XSXA?e=iax4kP
 
 2022/11/2
-https://changgunguniversity-my.sharepoint.com/:p:/g/personal/b0829066_cgu_edu_tw/EWBavFpB3gdOl0sJJGPawbwBVQtnKAtM9fRm4rwPzNN-FA?e=USJ9Yf
+
 
